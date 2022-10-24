@@ -3,6 +3,7 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   /*border: 1px solid black;*/
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -16,11 +17,11 @@ header {
   background-color: #709255;
   position: sticky;
   z-index: 10;
-  margin: auto;
-  width: 600px;
-  border-radius: 5px;
+  width: 100%;
   opacity: 0.9;
-  top: 8px;
+  top: 0;
+  padding: 5px;
+  margin-bottom: 5px;
 }
 
 header h1 {
@@ -38,10 +39,19 @@ nav a {
 
 ul {
   list-style-type: none;
+  margin-bottom: 10px;
 }
 
 ul.cv > li::before {
   content: "🦖";
+}
+
+.about-me {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  margin: auto;
+  gap: 30px;
 }
 
 figure {
@@ -51,6 +61,12 @@ figure {
   margin: auto;
   margin-bottom: 10px;
   font-weight: 300;
+}
+
+figcaption {
+  width: 80%;
+  text-align: center;
+  margin: auto;
 }
 
 article {
@@ -87,6 +103,7 @@ article span:first-child {
   margin: auto;
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 footer {
@@ -96,4 +113,81 @@ footer {
 a {
   text-decoration: 0;
   color: #353535;
+}
+
+.zungenbrecher article {
+  position: sticky;
+  top: 200px;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  min-height: 200px;
+  font-size: 1.5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.zungenbrecher article:nth-of-type(odd) {
+  background-color: #709255;
+}
+
+.zungenbrecher article:nth-of-type(even) {
+  background-color: #ff9505;
+}
+
+article:nth-child(2) {
+  top: 215px;
+}
+
+article:nth-child(3) {
+  top: 230px;
+}
+
+article:nth-child(4) {
+  top: 245px;
+}
+
+article:nth-child(5) {
+  top: 260px;
+}
+
+article:nth-child(6) {
+  top: 275px;
+}
+
+article:nth-child(7) {
+  top: 290px;
+}
+
+article:nth-child(8) {
+  top: 305px;
+}
+
+article:nth-child(9) {
+  top: 320px;
+}
+
+article:nth-child(10) {
+  top: 335px;
+}
+
+.empty {
+  height: 100px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 800px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.gallery img {
+  max-height: 400px;
+  max-width: 700px;
+  border: 2px solid #353535;
+  border-radius: 5px;
 }
